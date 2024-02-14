@@ -1,0 +1,17 @@
+.imageneses{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+}
+.img-s{
+    width: 300px;
+    height: 300px;
+    
+    border-radius: 10px;
+    object-fit: cover;
+    
+}

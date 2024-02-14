@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    max-width: 1450px;
+    height: 100vh;
+    padding: 40px;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.348), rgba(5,7,12,0.75)),url(../image/fondo-body2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 50%;
+    position: relative;
+}
+.mySlides{
+   width: 230px;
+    height: 320px;
+    margin: 260px; /* Centrar horizontalmente */
+    display: block; /* Para asegurar que el margen funcione correctamente */
+    
+}
+.mySlides img{
+    width: 230px;
+    height: 320px;
+    border-radius: 15px;  
+    filter: brightness(82%);
+}
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%; /* Ajusta este valor para acercarlos o alejarlos */
+    width: auto;
+    margin-top: -22px;
+    padding: 8px; /* Ajusta este valor para acercarlos o alejarlos */
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    border:  solid #fff 2px;
+}
+
+.next {
+    right: 150px;
+    border-radius: 3px 0 0 3px;
+}
+.prev {
+    left: 220px;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.elements{
+    text-align: center;
+}
+.quadrate{
+    cursor: pointer;
+    height: 4px;
+    width: 50px;
+    margin: 0 2px;
+    background-color: #717171;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border-radius: 2px;
+}
+.active, .quadrate:hover{
+    background-color: #fff;
+}
+@media screen and (max-width:900px) {
+    .container{
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .container{
+        width: 100%;
+    }
+    .prev,
+    .next{
+        padding: 5px;
+    }
+}
+
+button {
+    width: 60px; /* Ajusta el tamaño del círculo */
+    height: 60px; /* Ajusta el tamaño del círculo */
+    border-radius: 50%; /* Hace que el botón sea un círculo */
+    background-color: transparent; /* Fondo transparente */
+    border: 2px solid #9399a0; /* Borde azul */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute; /* Fija el botón en una posición específica */
+    top: 620px; /* Ajusta la distancia desde el borde superior */
+    left: 375px; /* Centra el botón horizontalmente */
+    transform: translateX(-50%); /* Ajusta la posición horizontal */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 24px;
+}
+
+button:hover {
+    background-color: #f0f0f070; /* Cambia el color de fondo cuando se pasa el cursor */
+}

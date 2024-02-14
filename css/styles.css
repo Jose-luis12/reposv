@@ -1,0 +1,40 @@
+.containers {
+    position: absolute;
+    
+    height: 80px; /* Ajusta según sea necesario */
+  }
+
+  .containers1 {
+    position: relative;
+    
+    height: 80px; /* Ajusta según sea necesario */
+  }
+  
+  .slideUp {
+    position: absolute;
+    bottom: 0;
+    animation: slideUp 2s ease forwards;
+    opacity: 0;
+    color: #b4c33f;
+  }
+
+  .slideUp2 {
+    position: absolute;
+    padding-left: 45px;
+    bottom: -350px;
+    animation: slideUp 2s ease forwards;
+    opacity: 0;
+    color: #e2e2e2;
+  }
+  
+  @keyframes slideUp {
+    from {
+      bottom: -250px; /* Define la posición inicial */
+      opacity: 0; /* Define la opacidad inicial */
+    }
+    to {
+      bottom: 1; /* Define la posición final */
+      opacity: 1; /* Define la opacidad final */
+    }
+  }
+  
